@@ -4,17 +4,18 @@
 	<head>
 		<title>Mushroom Mania</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 	<body ng-app="MushroomApp">
 		<h1>Mushroom Mania</h1>
 
-		<input type="radio" name="mushroom">All Mushrooms
-		<input type="radio" name="mushroom">Poisonous
-		<input type="radio" name="mushroom">Non-Poisonous
+		<input type="radio" name="mushroom" value="" ng-model="mushType" checked>All Mushrooms
+		<input type="radio" name="mushroom" value="false" ng-model="mushType">Poisonous
+		<input type="radio" name="mushroom" value="true" ng-model="mushType">Non-Poisonous
 		<br>
 		<br>
 		<label for="mushroom-text">Search For Mushrooms</label><br>
-		<input type="text" name="mushroom-text">
+		<input type="text" name="mushroom-text" ng-model="mushName">
 
 		<div ng-view></div>
 
