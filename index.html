@@ -9,9 +9,9 @@
 	<body ng-app="MushroomApp">
 		<h1>Mushroom Mania</h1>
 
-		<input type="radio" name="mushroom" checked>All Mushrooms
-		<input type="radio" name="mushroom">Poisonous
-		<input type="radio" name="mushroom">Non-Poisonous
+		<!-- <input type="radio" name="mushroom" checked>All Mushrooms -->
+		<input type="radio" name="mushroom" value="false" ng-model="mushType">Poisonous
+		<input type="radio" name="mushroom" value="true" ng-model="mushType">Non-Poisonous
 		<br>
 		<br>
 		<label for="mushroom-text">Search For Mushrooms</label><br>

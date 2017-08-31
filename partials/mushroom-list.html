@@ -2,7 +2,7 @@
 
 	<header><h3>Mushroom List</h3></header>
 
-	<div ng-repeat="item in mushrooms | filter : mushName">
+	<div ng-repeat="item in mushrooms | filter : mushName | filter : mushType">
 		<p><strong>Name: {{item.name}}</strong></p>
 		<p>Edible: {{item.edible}}</p>
 		<p>Description: {{item.description}}</p>
