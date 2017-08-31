@@ -1,12 +1,12 @@
 <article class="mushroom-list">
 
-	<header><h2>Mushroom List</h2></header>
+	<header><h3>Mushroom List</h3></header>
 
-	<div ng-repeat="item in mushrooms">
+	<div ng-repeat="item in mushrooms | filter : mushName">
 		<p><strong>Name: {{item.name}}</strong></p>
 		<p>Edible: {{item.edible}}</p>
 		<p>Description: {{item.description}}</p>
-		<br>
+		<hr>
 	</div>
 	
 </article>
